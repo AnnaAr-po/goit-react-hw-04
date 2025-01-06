@@ -1,0 +1,46 @@
+.header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: auto;
+    padding: 5px;
+    background-color: blueviolet;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+}
+
+.input_form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    background-color: #f1f3f4;
+    border-radius: 8px;
+ 
+}
+
+.input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    flex-grow: 1;
+    background: transparent;
+}
+
+.button {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
