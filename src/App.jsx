@@ -7,6 +7,7 @@ import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "./components/ImageModal/ImageModal";
 import SearchBar from "./components/SearchBar/SearchBar";
 import fetchImages from "./services/api";
+import { Toaster } from "react-hot-toast";
 import "./App.css";
 
 const App = () => {
@@ -57,6 +58,7 @@ const App = () => {
 
   return (
     <div>
+       <Toaster />
       <SearchBar onSubmit={handleSearch} />
       {error && <ErrorMessage message={error} />}
       <ImageGallery images={images} onImageClick={openModal} />
